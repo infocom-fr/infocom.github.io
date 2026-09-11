@@ -1,37 +1,40 @@
-# INFOCOM WEB V3 — E-COMMERCE
+# INFOCOM WEB V4 — FIXED
 
-Versión avanzada de la tienda INFOCOM, inspirada en patrones de navegación y e-commerce de grandes marcas de headwear.
+Versión corregida y más robusta del sitio INFOCOM.
 
-> La implementación usa identidad, textos, ilustraciones y recursos originales de INFOCOM. No copia logotipos, fotografías ni assets propietarios de terceros.
+## Correcciones principales
 
-## Funciones
+- Imágenes de productos y banners convertidas a **PNG locales** para evitar imágenes rotas al abrir el sitio desde ZIP, Windows o GitHub Pages.
+- Rutas de imágenes simplificadas y consistentes.
+- Barra superior corregida para evitar textos montados.
+- Navegación y mega menú corregidos.
+- Tipografías pequeñas aumentadas para evitar problemas con configuraciones de tamaño mínimo del navegador.
+- Diseño responsive para escritorio, tablet y móvil.
+- Catálogo de 12 productos.
+- Filtros, ordenamiento, búsqueda, favoritos y carrito.
+- Carrito y favoritos guardados en `localStorage`.
+- Modal de producto con clic sobre cualquier tarjeta.
+- Menú móvil funcional.
+- Banners e identidad visual originales de INFOCOM.
 
-- Mega menú de categorías y colecciones
-- Hero editorial
-- New Drop / campañas
-- Catálogo de 12 productos
-- Filtros: Premium, Urban, Sport, Classic
-- Ordenamiento por precio y nombre
-- Buscador
-- Favoritos
-- Carrito lateral
-- Barra de progreso para envío gratis
-- Quick product detail mediante doble clic
-- Cuenta / login visual
-- Rewards
-- Newsletter
-- Shop by style / silhouettes
-- Best sellers
-- Responsive mobile navigation
-- Assets locales SVG optimizados
+## Abrir
+
+1. Descomprime el ZIP.
+2. Abre `index.html`.
+3. No necesitas instalar Node.js ni ejecutar un servidor para esta versión.
 
 ## Estructura
 
 ```text
-INFOCOM_WEB_V3/
+INFOCOM_WEB_V4_FIXED/
 ├── assets/
 │   ├── banners/
+│   │   ├── collection.png
+│   │   └── sport.png
+│   ├── logo/
+│   │   └── infocom.png
 │   └── products/
+│       ├── 01.png ... 12.png
 ├── css/
 │   └── style.css
 ├── js/
@@ -40,20 +43,5 @@ INFOCOM_WEB_V3/
 └── README.md
 ```
 
-## Ejecutar
-
-Abre `index.html` directamente en el navegador.
-
-## Para producción
-
-Conectar:
-- Stripe/PayPal u otro proveedor de pagos
-- Base de datos
-- Inventario real
-- Autenticación
-- Backend/API
-- Envíos
-- Analytics
-- CMS para productos y colecciones
-
-© 2026 INFOCOM®. All rights reserved.
+### Nota
+Esta es una base front-end profesional. Para producción real todavía habría que conectar pagos, inventario, autenticación, pedidos, base de datos, envíos y un backend.
