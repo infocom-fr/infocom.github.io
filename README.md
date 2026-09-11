@@ -1,24 +1,45 @@
-# INFOCOM V3 — Premium Store
+# 🧢 INFOCOM V1
 
-Versión V3 del catálogo de INFOCOM, diseñada como una experiencia de e-commerce de estilo premium.
+**Tu estilo. Tu gorra. Tu identidad.**
 
-### Incluye
-- Landing/hero editorial
-- Catálogo de 12 gorras
-- Filtros y ordenamiento
-- Buscador modal
-- Favoritos
-- Vista detallada de producto
-- Carrito lateral
-- Newsletter
-- Diseño responsive para móvil, tablet y escritorio
-- Assets WebP ligeros
-- Identidad visual INFOCOM
+Primera versión de la tienda web de INFOCOM.
 
-### Uso
-Descomprime el ZIP y abre `index.html`.
+## Incluye
 
-### Personalización
-Reemplaza las imágenes de `assets/products/` por fotografías reales. Edita productos, precios y categorías en `js/script.js`.
+- Página de inicio
+- Catálogo de gorras
+- Filtros por categoría
+- Carrito funcional en frontend
+- Diseño responsive
+- Sección de marca
+- Contacto
+- HTML, CSS y JavaScript puro
 
-© 2026 INFOCOM
+## Estructura
+
+```text
+infocom/
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── img/
+├── index.html
+└── README.md
+```
+
+## Ejecutar
+
+Abre `index.html` directamente en el navegador.
+
+## Próximas versiones
+
+- Fotografías reales de las gorras
+- Página individual de producto
+- Checkout
+- Sistema de usuarios
+- Base de datos
+- Integración de pagos
+- Panel de administración
+
+© 2026 INFOCOM. All rights reserved.

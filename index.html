@@ -1,239 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080a0c">
-<meta name="description" content="INFOCOM — tienda de gorras con identidad.">
-<title>INFOCOM — Tu estilo. Tu gorra. Tu identidad.</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INFOCOM — Tu estilo. Tu gorra. Tu identidad.">
+  <title>INFOCOM | Gorras</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="topline"><span>INFOCOM®</span><span>COLECCIÓN 2026</span><span>ENVÍOS DISPONIBLES</span></div>
 
 <header class="header">
-  <a class="brand" href="#home"><img src="assets/brand/logo.jpg" alt="INFOCOM"><span>INFO<span>COM</span></span></a>
+  <a href="#" class="logo">INFO<span>COM</span></a>
+
   <nav>
-    <a href="#home">Inicio</a><a href="#shop">Shop</a><a href="#story">Historia</a><a href="#contact">Contacto</a>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
   </nav>
-  <div class="header-actions">
-    <button id="openSearch" title="Buscar">⌕</button>
-    <button id="openFav" title="Favoritos">♡ <small id="favCount">0</small></button>
-    <button id="openCart" class="bag" title="Carrito">Bag <small id="cartCount">0</small></button>
-  </div>
+
+  <button class="cart-button" id="cartButton">
+    Carrito <span id="cartCount">0</span>
+  </button>
 </header>
 
 <main>
-<section id="home" class="hero">
-  <div class="hero-left">
-    <div class="eyebrow"><span></span> IF COLLECTION / 001</div>
-    <h1>WEAR<br><i>YOUR</i><br>IDENTITY.</h1>
-    <p>Gorras con carácter, diseño y una identidad visual creada para destacar.</p>
-    <div class="hero-buttons"><a href="#shop" class="btn">EXPLORAR SHOP <b>↗</b></a><a href="#story" class="ghost">CONOCE INFOCOM</a></div>
-  </div>
-  <div class="hero-right">
-    <div class="orbit o1"></div><div class="orbit o2"></div>
-    <div class="hero-number">01</div>
-    <div class="hero-cap">🧢</div>
-    <div class="hero-caption"><span>IF / SIGNATURE</span><b>EST. 2026</b></div>
-  </div>
-</section>
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <p class="eyebrow">INFOCOM / COLLECTION 001</p>
+      <h1>Tu estilo.<br><em>Tu gorra.</em><br>Tu identidad.</h1>
+      <p class="hero-text">
+        Descubre una colección de gorras pensadas para complementar
+        tu estilo todos los días.
+      </p>
+      <a href="#catalogo" class="button">Ver colección →</a>
+    </div>
 
-<section class="ticker"><div>INFOCOM</div><div>YOUR STYLE</div><div>YOUR CAP</div><div>YOUR IDENTITY</div><div>INFOCOM</div></section>
+    <div class="hero-art">
+      <div class="circle"></div>
+      <div class="cap-icon">🧢</div>
+      <span>IF / 2026</span>
+    </div>
+  </section>
 
-<section id="shop" class="shop">
-  <div class="shop-head">
-    <div><div class="eyebrow">01 / SHOP</div><h2>THE COLLECTION<span>.</span></h2><p>Selecciona tu próxima identidad.</p></div>
-    <div class="shop-tools"><button id="sortBtn">Ordenar <span>↕</span></button><button id="searchShop">Buscar <span>⌕</span></button></div>
-  </div>
-  <div class="filters"><button class="filter active" data-filter="all">ALL <em>12</em></button><button class="filter" data-filter="premium">PREMIUM</button><button class="filter" data-filter="urbana">URBANA</button><button class="filter" data-filter="deportiva">SPORT</button><button class="filter" data-filter="clásica">CLÁSICA</button></div>
-  <div id="grid" class="grid">
-<article class="product" data-cat="premium" data-name="if shadow" data-price="49.99">
-  <div class="product-visual">
-    <span class="badge">LIMITED</span>
-    <button class="heart" data-id="1" aria-label="Favorito">♡</button>
-    <img src="assets/products/1.webp" alt="Gorra INFOCOM IF Shadow">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Premium <span>·</span> INFOCOM</div>
-    <h3>IF Shadow</h3>
-    <p>Negro profundo · Bordado IF</p>
-    <div class="row"><strong>$49.99</strong><button class="details" data-id="1">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="urbana" data-name="lime street" data-price="34.99">
-  <div class="product-visual">
-    <span class="badge">NEW</span>
-    <button class="heart" data-id="2" aria-label="Favorito">♡</button>
-    <img src="assets/products/2.webp" alt="Gorra INFOCOM Lime Street">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Urbana <span>·</span> INFOCOM</div>
-    <h3>Lime Street</h3>
-    <p>Negro · Detalles lima</p>
-    <div class="row"><strong>$34.99</strong><button class="details" data-id="2">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="clásica" data-name="royal mark" data-price="32.99">
-  <div class="product-visual">
-    <span class="badge">BEST</span>
-    <button class="heart" data-id="3" aria-label="Favorito">♡</button>
-    <img src="assets/products/3.webp" alt="Gorra INFOCOM Royal Mark">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Clásica <span>·</span> INFOCOM</div>
-    <h3>Royal Mark</h3>
-    <p>Azul royal · Logo blanco</p>
-    <div class="row"><strong>$32.99</strong><button class="details" data-id="3">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="deportiva" data-name="carbon pro" data-price="39.99">
-  <div class="product-visual">
-    <span class="badge">SPORT</span>
-    <button class="heart" data-id="4" aria-label="Favorito">♡</button>
-    <img src="assets/products/4.webp" alt="Gorra INFOCOM Carbon Pro">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Deportiva <span>·</span> INFOCOM</div>
-    <h3>Carbon Pro</h3>
-    <p>Carbono · Performance</p>
-    <div class="row"><strong>$39.99</strong><button class="details" data-id="4">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="clásica" data-name="ice white" data-price="29.99">
-  <div class="product-visual">
-    <span class="badge">CLEAN</span>
-    <button class="heart" data-id="5" aria-label="Favorito">♡</button>
-    <img src="assets/products/5.webp" alt="Gorra INFOCOM Ice White">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Clásica <span>·</span> INFOCOM</div>
-    <h3>Ice White</h3>
-    <p>Blanco · Minimal</p>
-    <div class="row"><strong>$29.99</strong><button class="details" data-id="5">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="deportiva" data-name="forest force" data-price="37.99">
-  <div class="product-visual">
-    <span class="badge">OUTDOOR</span>
-    <button class="heart" data-id="6" aria-label="Favorito">♡</button>
-    <img src="assets/products/6.webp" alt="Gorra INFOCOM Forest Force">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Deportiva <span>·</span> INFOCOM</div>
-    <h3>Forest Force</h3>
-    <p>Forest · IF lime</p>
-    <div class="row"><strong>$37.99</strong><button class="details" data-id="6">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="urbana" data-name="urban gray" data-price="33.99">
-  <div class="product-visual">
-    <span class="badge">STREET</span>
-    <button class="heart" data-id="7" aria-label="Favorito">♡</button>
-    <img src="assets/products/7.webp" alt="Gorra INFOCOM Urban Gray">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Urbana <span>·</span> INFOCOM</div>
-    <h3>Urban Gray</h3>
-    <p>Gris · Street fit</p>
-    <div class="row"><strong>$33.99</strong><button class="details" data-id="7">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="premium" data-name="night lime" data-price="44.99">
-  <div class="product-visual">
-    <span class="badge">DROP</span>
-    <button class="heart" data-id="8" aria-label="Favorito">♡</button>
-    <img src="assets/products/8.webp" alt="Gorra INFOCOM Night Lime">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Premium <span>·</span> INFOCOM</div>
-    <h3>Night Lime</h3>
-    <p>Negro · Signature</p>
-    <div class="row"><strong>$44.99</strong><button class="details" data-id="8">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="urbana" data-name="blue wave" data-price="35.99">
-  <div class="product-visual">
-    <span class="badge">NEW</span>
-    <button class="heart" data-id="9" aria-label="Favorito">♡</button>
-    <img src="assets/products/9.webp" alt="Gorra INFOCOM Blue Wave">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Urbana <span>·</span> INFOCOM</div>
-    <h3>Blue Wave</h3>
-    <p>Blue · Wave details</p>
-    <div class="row"><strong>$35.99</strong><button class="details" data-id="9">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="premium" data-name="silver mark" data-price="47.99">
-  <div class="product-visual">
-    <span class="badge">SIGNATURE</span>
-    <button class="heart" data-id="10" aria-label="Favorito">♡</button>
-    <img src="assets/products/10.webp" alt="Gorra INFOCOM Silver Mark">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Premium <span>·</span> INFOCOM</div>
-    <h3>Silver Mark</h3>
-    <p>Grafito · Silver IF</p>
-    <div class="row"><strong>$47.99</strong><button class="details" data-id="10">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="clásica" data-name="fresh mint" data-price="31.99">
-  <div class="product-visual">
-    <span class="badge">EVERYDAY</span>
-    <button class="heart" data-id="11" aria-label="Favorito">♡</button>
-    <img src="assets/products/11.webp" alt="Gorra INFOCOM Fresh Mint">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Clásica <span>·</span> INFOCOM</div>
-    <h3>Fresh Mint</h3>
-    <p>Mint · Daily fit</p>
-    <div class="row"><strong>$31.99</strong><button class="details" data-id="11">Ver producto <span>↗</span></button></div>
-  </div>
-</article>
-<article class="product" data-cat="deportiva" data-name="black core" data-price="36.99">
-  <div class="product-visual">
-    <span class="badge">CORE</span>
-    <button class="heart" data-id="12" aria-label="Favorito">♡</button>
-    <img src="assets/products/12.webp" alt="Gorra INFOCOM Black Core">
-  </div>
-  <div class="product-meta">
-    <div class="cat">Deportiva <span>·</span> INFOCOM</div>
-    <h3>Black Core</h3>
-    <p>Black · Sport pink</p>
-    <div class="row"><strong>$36.99</strong><button class="details" data-id="12">Ver producto <span>↗</span></button></div>
-  </div>
-</article></div>
-  <div id="empty" class="empty" hidden>NO HAY RESULTADOS.</div>
-</section>
+  <section class="intro">
+    <p class="eyebrow">01 / INFOCOM</p>
+    <h2>Una gorra puede<br><span>decir mucho.</span></h2>
+    <p>
+      INFOCOM combina diseño, actitud y comodidad para crear una
+      colección sencilla, moderna y fácil de llevar.
+    </p>
+  </section>
 
-<section class="editorial">
-  <div class="editorial-img"><div class="big-if">IF</div><span>DETAIL / 001</span></div>
-  <div class="editorial-copy"><div class="eyebrow">02 / EDITORIAL</div><h2>NO ES<br>SOLO UNA<br><span>GORRA.</span></h2><p>Es el detalle que completa el outfit. INFOCOM nace de la cultura urbana y de la idea de que el estilo también es una forma de identidad.</p><a href="#story" class="line-link">LEER NUESTRA HISTORIA <b>→</b></a></div>
-</section>
+  <section class="catalog" id="catalogo">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">02 / SHOP</p>
+        <h2>La colección<span>.</span></h2>
+      </div>
+      <p>Selección INFOCOM 2026</p>
+    </div>
 
-<section id="story" class="story">
-  <div class="story-head"><div class="eyebrow">03 / INFOCOM</div><h2>MADE FOR<br><span>YOUR MOMENT.</span></h2></div>
-  <div class="story-grid">
-    <div><b>01</b><h3>IDENTIDAD</h3><p>Una estética reconocible en cada detalle.</p></div>
-    <div><b>02</b><h3>DISEÑO</h3><p>Formas limpias y combinaciones pensadas para durar.</p></div>
-    <div><b>03</b><h3>ACTITUD</h3><p>Una gorra que habla antes que tú.</p></div>
-  </div>
-</section>
+    <div class="filters">
+      <button class="filter active" data-filter="all">Todas</button>
+      <button class="filter" data-filter="urbana">Urbanas</button>
+      <button class="filter" data-filter="sport">Sport</button>
+      <button class="filter" data-filter="clasica">Clásicas</button>
+    </div>
 
-<section class="newsletter">
-  <div><div class="eyebrow">04 / INSIDER</div><h2>GET THE DROP.</h2><p>Recibe nuevos lanzamientos y novedades de INFOCOM.</p></div>
-  <form id="newsletter"><input type="email" required placeholder="TU EMAIL"><button>UNIRME ↗</button></form>
-</section>
+    <div class="products" id="products">
+
+      <article class="product" data-category="urbana">
+        <div class="product-image dark"><span>01</span><b>IF</b></div>
+        <div class="product-info">
+          <small>URBANA</small>
+          <h3>Black Identity</h3>
+          <p>Negro · Logo INFOCOM</p>
+          <strong>$34.99</strong>
+          <button class="add" data-name="Black Identity" data-price="34.99">Añadir</button>
+        </div>
+      </article>
+
+      <article class="product" data-category="sport">
+        <div class="product-image green"><span>02</span><b>IF</b></div>
+        <div class="product-info">
+          <small>SPORT</small>
+          <h3>Lime Performance</h3>
+          <p>Verde · Performance</p>
+          <strong>$39.99</strong>
+          <button class="add" data-name="Lime Performance" data-price="39.99">Añadir</button>
+        </div>
+      </article>
+
+      <article class="product" data-category="clasica">
+        <div class="product-image white"><span>03</span><b>IF</b></div>
+        <div class="product-info">
+          <small>CLÁSICA</small>
+          <h3>White Essential</h3>
+          <p>Blanco · Minimal</p>
+          <strong>$29.99</strong>
+          <button class="add" data-name="White Essential" data-price="29.99">Añadir</button>
+        </div>
+      </article>
+
+      <article class="product" data-category="urbana">
+        <div class="product-image blue"><span>04</span><b>IF</b></div>
+        <div class="product-info">
+          <small>URBANA</small>
+          <h3>Royal Street</h3>
+          <p>Azul · Street fit</p>
+          <strong>$36.99</strong>
+          <button class="add" data-name="Royal Street" data-price="36.99">Añadir</button>
+        </div>
+      </article>
+
+      <article class="product" data-category="sport">
+        <div class="product-image gray"><span>05</span><b>IF</b></div>
+        <div class="product-info">
+          <small>SPORT</small>
+          <h3>Carbon Pro</h3>
+          <p>Grafito · Performance</p>
+          <strong>$41.99</strong>
+          <button class="add" data-name="Carbon Pro" data-price="41.99">Añadir</button>
+        </div>
+      </article>
+
+      <article class="product" data-category="clasica">
+        <div class="product-image forest"><span>06</span><b>IF</b></div>
+        <div class="product-info">
+          <small>CLÁSICA</small>
+          <h3>Forest Mark</h3>
+          <p>Verde bosque · IF</p>
+          <strong>$32.99</strong>
+          <button class="add" data-name="Forest Mark" data-price="32.99">Añadir</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="about" id="nosotros">
+    <div>
+      <p class="eyebrow">03 / NOSOTROS</p>
+      <h2>Más que una<br><span>gorra.</span></h2>
+    </div>
+    <p>
+      INFOCOM nace para convertir un accesorio cotidiano en una parte
+      reconocible de tu identidad. Diseño limpio, actitud urbana y
+      piezas pensadas para combinar contigo.
+    </p>
+  </section>
+
+  <section class="contact" id="contacto">
+    <p class="eyebrow">04 / CONTACTO</p>
+    <h2>¿Hablamos?</h2>
+    <p>Estamos preparando nuevas colecciones INFOCOM.</p>
+    <a href="mailto:contacto@infocom.com" class="button">Contactar →</a>
+  </section>
 </main>
 
-<footer id="contact">
-  <div class="footer-main"><div><div class="footer-logo">INFO<span>COM</span></div><p>Tu estilo. Tu gorra. Tu identidad.</p></div><div><span>EXPLORE</span><a href="#shop">Shop</a><a href="#story">Historia</a><a href="#contact">Contacto</a></div><div><span>SOCIAL</span><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a></div><div><span>INFO</span><p>© 2026 INFOCOM</p><p>Todos los derechos reservados.</p></div></div>
-  <div class="footer-bottom"><span>INFOCOM / 2026</span><span>DESIGNED WITH IDENTITY</span></div>
+<footer>
+  <div class="footer-logo">INFO<span>COM</span></div>
+  <p>Tu estilo. Tu gorra. Tu identidad.</p>
+  <div class="footer-bottom">
+    <span>© 2026 INFOCOM</span>
+    <span>Todos los derechos reservados.</span>
+  </div>
 </footer>
 
-<div id="searchModal" class="modal"><div class="modal-card search-card"><button class="close" data-close="searchModal">×</button><div class="eyebrow">SEARCH</div><h2>ENCUENTRA<br><span>TU GORRA.</span></h2><input id="searchInput" type="search" placeholder="Buscar por nombre o categoría..."></div></div>
-<div id="productModal" class="modal"><div class="modal-card"><button class="close" data-close="productModal">×</button><div id="productDetail"></div></div></div>
-<aside id="cartDrawer"><div class="drawer-head"><span>BAG / <b id="drawerCount">0</b></span><button id="closeCart">×</button></div><div id="cartItems"></div><div class="drawer-bottom"><div><span>TOTAL</span><strong id="cartTotal">$0.00</strong></div><button id="checkout">CONTINUAR <b>→</b></button></div></aside><div id="overlay"></div>
-<script>const PRODUCTS=[{"id": 1, "code": "01", "name": "IF Shadow", "category": "Premium", "price": 49.99, "description": "Negro profundo · Bordado IF", "badge": "LIMITED"}, {"id": 2, "code": "02", "name": "Lime Street", "category": "Urbana", "price": 34.99, "description": "Negro · Detalles lima", "badge": "NEW"}, {"id": 3, "code": "03", "name": "Royal Mark", "category": "Clásica", "price": 32.99, "description": "Azul royal · Logo blanco", "badge": "BEST"}, {"id": 4, "code": "04", "name": "Carbon Pro", "category": "Deportiva", "price": 39.99, "description": "Carbono · Performance", "badge": "SPORT"}, {"id": 5, "code": "05", "name": "Ice White", "category": "Clásica", "price": 29.99, "description": "Blanco · Minimal", "badge": "CLEAN"}, {"id": 6, "code": "06", "name": "Forest Force", "category": "Deportiva", "price": 37.99, "description": "Forest · IF lime", "badge": "OUTDOOR"}, {"id": 7, "code": "07", "name": "Urban Gray", "category": "Urbana", "price": 33.99, "description": "Gris · Street fit", "badge": "STREET"}, {"id": 8, "code": "08", "name": "Night Lime", "category": "Premium", "price": 44.99, "description": "Negro · Signature", "badge": "DROP"}, {"id": 9, "code": "09", "name": "Blue Wave", "category": "Urbana", "price": 35.99, "description": "Blue · Wave details", "badge": "NEW"}, {"id": 10, "code": "10", "name": "Silver Mark", "category": "Premium", "price": 47.99, "description": "Grafito · Silver IF", "badge": "SIGNATURE"}, {"id": 11, "code": "11", "name": "Fresh Mint", "category": "Clásica", "price": 31.99, "description": "Mint · Daily fit", "badge": "EVERYDAY"}, {"id": 12, "code": "12", "name": "Black Core", "category": "Deportiva", "price": 36.99, "description": "Black · Sport pink", "badge": "CORE"}];</script><script src="js/script.js"></script>
-</body></html>
+<div class="cart" id="cart">
+  <div class="cart-head">
+    <h3>Tu carrito</h3>
+    <button id="closeCart">×</button>
+  </div>
+  <div id="cartItems"></div>
+  <div class="cart-total">
+    <span>Total</span>
+    <strong id="cartTotal">$0.00</strong>
+  </div>
+  <button class="checkout" id="checkout">Continuar →</button>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
