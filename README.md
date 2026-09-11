@@ -1,45 +1,39 @@
-# 🧢 INFOCOM V1
+# INFOCOM WEB V2
 
-**Tu estilo. Tu gorra. Tu identidad.**
+## Tu estilo. Tu gorra. Tu identidad.
 
-Primera versión de la tienda web de INFOCOM.
+V2 del sitio web de INFOCOM, planteada como una experiencia de marca y catálogo con estética premium.
 
-## Incluye
-
-- Página de inicio
-- Catálogo de gorras
+### Funcionalidades
+- Hero editorial
+- Catálogo con 6 productos
 - Filtros por categoría
-- Carrito funcional en frontend
+- Ordenamiento por precio
+- Buscador
+- Favoritos
+- Carrito lateral
+- Newsletter
 - Diseño responsive
-- Sección de marca
-- Contacto
-- HTML, CSS y JavaScript puro
+- Navegación por secciones
+- Identidad visual negro / lima
 
-## Estructura
+### Estructura
 
 ```text
-infocom/
+INFOCOM_WEB_V2/
+├── assets/
 ├── css/
 │   └── style.css
 ├── js/
 │   └── script.js
-├── img/
 ├── index.html
 └── README.md
 ```
 
-## Ejecutar
+### Ejecutar
+Abre `index.html` en un navegador.
 
-Abre `index.html` directamente en el navegador.
-
-## Próximas versiones
-
-- Fotografías reales de las gorras
-- Página individual de producto
-- Checkout
-- Sistema de usuarios
-- Base de datos
-- Integración de pagos
-- Panel de administración
+### Próximo paso
+Sustituir las piezas visuales de demostración por fotografías reales de las gorras, añadir páginas individuales de producto y conectar checkout/pagos.
 
 © 2026 INFOCOM. All rights reserved.
