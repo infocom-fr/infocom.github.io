@@ -25,6 +25,7 @@ function render(){
  document.querySelectorAll("[data-add]").forEach(b=>b.onclick=e=>{e.stopPropagation();add(Number(b.dataset.add))});
  document.querySelectorAll("[data-wish]").forEach(b=>b.onclick=e=>{e.stopPropagation();toggleWish(Number(b.dataset.wish))});
  document.querySelectorAll(".card").forEach(c=>c.onclick=()=>openProduct(Number(c.dataset.id)));
+document.querySelectorAll(".card-img img").forEach(img=>img.loading="lazy");
 }
 function renderBest(){best.innerHTML=PRODUCTS.slice(0,3).map(p=>`<article class="mini"><img src="${p.img}" alt="${p.name}"><div><small>BEST SELLER</small><h3>${p.name}</h3><p style="font-size:11px;color:#879197;margin:0 0 16px">${p.desc}</p><b>$${p.price.toFixed(2)}</b><br><button class="add" data-add="${p.id}" style="margin-top:12px">ADD TO BAG ↗</button></div></article>`).join("");document.querySelectorAll(".mini [data-add]").forEach(b=>b.onclick=()=>add(Number(b.dataset.add)))}
 function add(id){const p=PRODUCTS.find(x=>x.id===id);cart.push(p.id);save();updateCart();openBag();toast(p.name+" added to bag")}

@@ -1,10 +1,13 @@
-# INFOCOM WEB V4 — FIXED
+# INFOCOM WEB V5 — COLOR & SHAPES
 
-Versión corregida y más robusta del sitio INFOCOM.
+Versión visual mejorada del sitio INFOCOM, con más color, siluetas de gorras diferenciadas y renders de producto más trabajados.
 
 ## Correcciones principales
 
-- Imágenes de productos y banners convertidas a **PNG locales** para evitar imágenes rotas al abrir el sitio desde ZIP, Windows o GitHub Pages.
+- Imágenes de productos y banners convertidas a **PNG locales**
+- 12 gorras con siluetas visuales diferenciadas (59FIFTY, 9FIFTY, 9FORTY, 9SEVENTY, 39THIRTY y estilos curvos/planos)
+- Paleta de acentos lima, cyan, rosa, naranja y violeta integrada de forma controlada
+- Fondos, tarjetas y banners con iluminación y profundidad visual para evitar imágenes rotas al abrir el sitio desde ZIP, Windows o GitHub Pages.
 - Rutas de imágenes simplificadas y consistentes.
 - Barra superior corregida para evitar textos montados.
 - Navegación y mega menú corregidos.
