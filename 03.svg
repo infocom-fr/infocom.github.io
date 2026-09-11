@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+<defs>
+ <radialGradient id="g" cx="50%" cy="40%"><stop offset="0" stop-color="#dfe3e4"/><stop offset="1" stop-color="#dfe3e4"/></radialGradient>
+ <filter id="s"><feDropShadow dx="0" dy="28" stdDeviation="22" flood-opacity=".35"/></filter>
+</defs>
+<rect width="800" height="800" fill="#dfe3e4"/>
+<circle cx="400" cy="390" r="275" fill="none" stroke="#111517" stroke-opacity=".16" stroke-width="2"/>
+<g filter="url(#s)" transform="translate(0,35)">
+ <path d="M205 405 Q235 190 405 180 Q575 190 610 405 L530 455 Q400 425 270 455Z" fill="url(#g)" stroke="#111517" stroke-opacity=".22" stroke-width="4"/>
+ <path d="M205 405 Q400 375 610 405 Q555 525 400 525 Q245 525 205 405Z" fill="#f3f5f6" stroke="#111517" stroke-opacity=".2" stroke-width="4"/>
+ <path d="M275 260 Q400 215 525 260" fill="none" stroke="#111517" stroke-opacity=".28" stroke-width="5"/>
+ <text x="400" y="355" text-anchor="middle" fill="#111517" font-family="Arial" font-size="92" font-weight="900" letter-spacing="-8">IF</text>
+ <text x="400" y="390" text-anchor="middle" fill="#111517" opacity=".72" font-family="Arial" font-size="15" font-weight="700" letter-spacing="5">INFOCOM</text>
+</g>
+<text x="34" y="748" fill="#111517" opacity=".7" font-family="Arial" font-size="13" font-weight="700" letter-spacing="3">INFOCOM / ORIGINAL PRODUCT VISUAL</text>
+</svg>

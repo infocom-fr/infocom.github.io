@@ -1,27 +1,37 @@
-# INFOCOM WEB V2
+# INFOCOM WEB V3 — E-COMMERCE
 
-## Tu estilo. Tu gorra. Tu identidad.
+Versión avanzada de la tienda INFOCOM, inspirada en patrones de navegación y e-commerce de grandes marcas de headwear.
 
-V2 del sitio web de INFOCOM, planteada como una experiencia de marca y catálogo con estética premium.
+> La implementación usa identidad, textos, ilustraciones y recursos originales de INFOCOM. No copia logotipos, fotografías ni assets propietarios de terceros.
 
-### Funcionalidades
+## Funciones
+
+- Mega menú de categorías y colecciones
 - Hero editorial
-- Catálogo con 6 productos
-- Filtros por categoría
-- Ordenamiento por precio
+- New Drop / campañas
+- Catálogo de 12 productos
+- Filtros: Premium, Urban, Sport, Classic
+- Ordenamiento por precio y nombre
 - Buscador
 - Favoritos
 - Carrito lateral
+- Barra de progreso para envío gratis
+- Quick product detail mediante doble clic
+- Cuenta / login visual
+- Rewards
 - Newsletter
-- Diseño responsive
-- Navegación por secciones
-- Identidad visual negro / lima
+- Shop by style / silhouettes
+- Best sellers
+- Responsive mobile navigation
+- Assets locales SVG optimizados
 
-### Estructura
+## Estructura
 
 ```text
-INFOCOM_WEB_V2/
+INFOCOM_WEB_V3/
 ├── assets/
+│   ├── banners/
+│   └── products/
 ├── css/
 │   └── style.css
 ├── js/
@@ -30,10 +40,20 @@ INFOCOM_WEB_V2/
 └── README.md
 ```
 
-### Ejecutar
-Abre `index.html` en un navegador.
+## Ejecutar
 
-### Próximo paso
-Sustituir las piezas visuales de demostración por fotografías reales de las gorras, añadir páginas individuales de producto y conectar checkout/pagos.
+Abre `index.html` directamente en el navegador.
 
-© 2026 INFOCOM. All rights reserved.
+## Para producción
+
+Conectar:
+- Stripe/PayPal u otro proveedor de pagos
+- Base de datos
+- Inventario real
+- Autenticación
+- Backend/API
+- Envíos
+- Analytics
+- CMS para productos y colecciones
+
+© 2026 INFOCOM®. All rights reserved.

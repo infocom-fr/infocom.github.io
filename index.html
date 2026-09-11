@@ -1,130 +1,68 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="INFOCOM — gorras con identidad. Colección 2026.">
-  <meta name="theme-color" content="#07090b">
-  <title>INFOCOM — Your Identity</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="INFOCOM — tienda de gorras. Colecciones, nuevos drops y esenciales.">
+<meta name="theme-color" content="#07090b">
+<title>INFOCOM® — Gorras</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="announcement">
-    <span>INFOCOM®</span><span>FREE SHIPPING ON ORDERS OVER $75</span><span>COLLECTION 01 / 2026</span>
+<div class="topbar"><span>FREE SHIPPING ON ORDERS OVER $75</span><span>JOIN INFOCOM REWARDS — EARN POINTS ON EVERY ORDER</span><span>COLLECTION 001 / 2026</span></div>
+
+<header class="header">
+  <button class="mobile-menu" id="mobileMenu">☰</button>
+  <a class="brand" href="#home"><span class="mark">IF</span><strong>INFO<span>COM</span></strong></a>
+  <nav id="nav">
+    <div class="nav-item has-menu"><a href="#shop">SHOP</a><div class="mega">
+      <div><div class="mega-title">HEADWEAR</div><a href="#shop" data-cat="all">Shop All</a><a href="#shop" data-cat="premium">Premium</a><a href="#shop" data-cat="urban">Urban</a><a href="#shop" data-cat="sport">Sport</a><a href="#shop" data-cat="classic">Classic</a></div>
+      <div><div class="mega-title">COLLECTIONS</div><a href="#drops">New Drop</a><a href="#drops">Best Sellers</a><a href="#drops">Signature</a><a href="#story">INFOCOM Originals</a></div>
+      <div class="mega-feature"><img src="assets/banners/collection.svg" alt="Colección INFOCOM"><div>COLLECTION 001 <b>THE NEW DROP</b></div></div>
+    </div></div>
+    <a href="#drops">NEW ARRIVALS</a><a href="#bestsellers">BEST SELLERS</a><a href="#story">ABOUT INFOCOM</a><a href="#contact">CONTACT</a>
+  </nav>
+  <div class="actions">
+    <button id="searchBtn" title="Buscar">⌕</button><button id="accountBtn" title="Cuenta">♙</button><button id="wishBtn" title="Favoritos">♡<i id="wishCount">0</i></button><button id="bagBtn" class="bag">BAG <i id="bagCount">0</i></button>
   </div>
+</header>
 
-  <header class="header">
-    <a class="brand" href="#home" aria-label="INFOCOM inicio">
-      <div class="brand-mark">IF</div><div>INFO<span>COM</span></div>
-    </a>
-    <nav>
-      <a href="#home">Inicio</a><a href="#shop">Shop</a><a href="#story">Manifiesto</a><a href="#contact">Contacto</a>
-    </nav>
-    <div class="actions">
-      <button id="searchBtn" aria-label="Buscar">⌕</button>
-      <button id="favBtn" aria-label="Favoritos">♡ <i id="favCount">0</i></button>
-      <button id="bagBtn" class="bag">BAG <i id="bagCount">0</i></button>
-    </div>
-  </header>
+<main>
+<section id="home" class="hero">
+ <div class="hero-left"><div class="eyebrow">INFOCOM® / THE HOME OF YOUR STYLE</div><h1>YOUR<br><em>CAP.</em><br>YOUR<br>IDENTITY.</h1><p>Una nueva generación de gorras construida alrededor del diseño, el detalle y la actitud.</p><div class="hero-buttons"><a class="btn" href="#shop">SHOP ALL <b>↗</b></a><a class="link" href="#story">OUR STORY →</a></div><div class="hero-foot"><span>EST. 2026</span><span>12 ORIGINAL STYLES</span><span>DESIGNED FOR EVERYDAY</span></div></div>
+ <div class="hero-right"><div class="hero-orbit"></div><img src="assets/products/01.svg" alt="Gorra INFOCOM Shadow IF"><span class="hero-code">IF / 001</span><span class="hero-side">INFOCOM / HEADWEAR / ORIGINAL</span></div>
+</section>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><b></b> IF / COLLECTION 001</div>
-        <h1>WEAR<br><span>YOUR</span><br>IDENTITY.</h1>
-        <p>Gorras diseñadas para quienes no necesitan explicar su estilo. Una nueva lectura del accesorio que define el outfit.</p>
-        <div class="hero-actions"><a class="primary" href="#shop">SHOP COLLECTION <strong>↗</strong></a><a class="text-link" href="#story">EXPLORE THE BRAND</a></div>
-        <div class="hero-meta"><span>EST. 2026</span><span>DESIGNED FOR EVERYDAY</span></div>
-      </div>
-      <div class="hero-visual">
-        <div class="ring ring-a"></div><div class="ring ring-b"></div>
-        <div class="floating-tag">IF<br><small>001</small></div>
-        <div class="cap">🧢</div>
-        <div class="vertical">INFOCOM / YOUR STYLE / YOUR IDENTITY</div>
-        <div class="hero-index">01</div>
-      </div>
-    </section>
+<section class="trust"><div><b>01</b><span>ORIGINAL DESIGN</span></div><div><b>02</b><span>FAST SHIPPING</span></div><div><b>03</b><span>SECURE CHECKOUT</span></div><div><b>04</b><span>INFOCOM REWARDS</span></div></section>
 
-    <div class="marquee"><span>INFOCOM</span><span>YOUR STYLE</span><span>YOUR CAP</span><span>YOUR IDENTITY</span><span>INFOCOM</span><span>YOUR STYLE</span></div>
+<section id="drops" class="editorial"><div class="editorial-copy"><div class="eyebrow">01 / NEW DROP</div><h2>THE NEW<br><em>ERA OF IF.</em></h2><p>Descubre nuestra primera colección: siluetas urbanas, esenciales premium y modelos deportivos.</p><a class="btn" href="#shop">SHOP THE DROP ↗</a></div><div class="editorial-img"><img src="assets/banners/collection.svg" alt="INFOCOM Collection 001"></div></section>
 
-    <section id="shop" class="shop section">
-      <div class="section-top">
-        <div><div class="eyebrow"><b></b> 01 / THE COLLECTION</div><h2>SHOP THE<br><em>DROP.</em></h2></div>
-        <div class="section-note">6 PIECES / COLLECTION 001<br><span>LIMITED VISUAL EDITION</span></div>
-      </div>
+<section id="shop" class="shop section">
+ <div class="heading"><div><div class="eyebrow">02 / SHOP ALL</div><h2>FIND YOUR<br><em>FIT.</em></h2></div><p><b>12</b> STYLES<br>COLLECTION 001</p></div>
+ <div class="toolbar"><div class="filters"><button class="active" data-cat="all">ALL</button><button data-cat="premium">PREMIUM</button><button data-cat="urban">URBAN</button><button data-cat="sport">SPORT</button><button data-cat="classic">CLASSIC</button></div><div class="tools"><button id="filterBtn">FILTER +</button><select id="sort"><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="az">Name: A-Z</option></select></div></div>
+ <div class="product-grid" id="productGrid"></div>
+ <div class="loadmore"><button id="loadMore">LOAD MORE <span>12 / 12</span></button></div>
+</section>
 
-      <div class="shop-bar">
-        <div class="categories">
-          <button class="active" data-filter="all">ALL <small>06</small></button>
-          <button data-filter="premium">PREMIUM</button><button data-filter="urban">URBAN</button><button data-filter="sport">SPORT</button><button data-filter="classic">CLASSIC</button>
-        </div>
-        <button class="sort" id="sort">PRICE ↕</button>
-      </div>
+<section class="silhouettes"><div class="heading"><div><div class="eyebrow">03 / SHOP BY STYLE</div><h2>THE<br><em>SILHOUETTES.</em></h2></div></div><div class="sil-grid"><button data-cat="premium"><img src="assets/products/01.svg"><b>PREMIUM</b><span>Signature / Elevated</span></button><button data-cat="urban"><img src="assets/products/04.svg"><b>URBAN</b><span>Street / Everyday</span></button><button data-cat="sport"><img src="assets/products/10.svg"><b>SPORT</b><span>Performance / Active</span></button><button data-cat="classic"><img src="assets/products/03.svg"><b>CLASSIC</b><span>Essential / Clean</span></button></div></section>
 
-      <div class="products" id="products">
-        <article class="product" data-category="premium" data-price="49.99">
-          <div class="product-art art-black"><label>LIMITED</label><button class="heart" data-id="1">♡</button><span>01</span><strong>IF</strong></div>
-          <div class="product-body"><small>PREMIUM / SIGNATURE</small><h3>Shadow IF</h3><p>Black · Signature embroidery</p><div><b>$49.99</b><button class="add" data-name="Shadow IF" data-price="49.99">ADD TO BAG ↗</button></div></div>
-        </article>
-        <article class="product" data-category="urban" data-price="34.99">
-          <div class="product-art art-lime"><label>NEW</label><button class="heart" data-id="2">♡</button><span>02</span><strong>IF</strong></div>
-          <div class="product-body"><small>URBAN / DAILY</small><h3>Lime Street</h3><p>Black · Lime details</p><div><b>$34.99</b><button class="add" data-name="Lime Street" data-price="34.99">ADD TO BAG ↗</button></div></div>
-        </article>
-        <article class="product" data-category="classic" data-price="29.99">
-          <div class="product-art art-white"><label>CLEAN</label><button class="heart" data-id="3">♡</button><span>03</span><strong>IF</strong></div>
-          <div class="product-body"><small>CLASSIC / ESSENTIAL</small><h3>White Essential</h3><p>White · Minimal mark</p><div><b>$29.99</b><button class="add" data-name="White Essential" data-price="29.99">ADD TO BAG ↗</button></div></div>
-        </article>
-        <article class="product" data-category="urban" data-price="36.99">
-          <div class="product-art art-blue"><label>DROP</label><button class="heart" data-id="4">♡</button><span>04</span><strong>IF</strong></div>
-          <div class="product-body"><small>URBAN / STREET</small><h3>Royal Street</h3><p>Royal blue · White mark</p><div><b>$36.99</b><button class="add" data-name="Royal Street" data-price="36.99">ADD TO BAG ↗</button></div></div>
-        </article>
-        <article class="product" data-category="sport" data-price="41.99">
-          <div class="product-art art-carbon"><label>SPORT</label><button class="heart" data-id="5">♡</button><span>05</span><strong>IF</strong></div>
-          <div class="product-body"><small>SPORT / PERFORMANCE</small><h3>Carbon Pro</h3><p>Graphite · Performance fit</p><div><b>$41.99</b><button class="add" data-name="Carbon Pro" data-price="41.99">ADD TO BAG ↗</button></div></div>
-        </article>
-        <article class="product" data-category="classic" data-price="32.99">
-          <div class="product-art art-forest"><label>EVERYDAY</label><button class="heart" data-id="6">♡</button><span>06</span><strong>IF</strong></div>
-          <div class="product-body"><small>CLASSIC / OUTDOOR</small><h3>Forest Mark</h3><p>Forest · Lime embroidery</p><div><b>$32.99</b><button class="add" data-name="Forest Mark" data-price="32.99">ADD TO BAG ↗</button></div></div>
-        </article>
-      </div>
-    </section>
+<section id="bestsellers" class="best section"><div class="heading"><div><div class="eyebrow">04 / BEST SELLERS</div><h2>THE ONES<br>YOU <em>WANT.</em></h2></div><a class="link" href="#shop">VIEW ALL →</a></div><div class="mini-grid" id="bestGrid"></div></section>
 
-    <section id="story" class="manifesto">
-      <div class="manifesto-art"><div class="outline">IF</div><span>DETAIL STUDY / 001</span><b>02</b></div>
-      <div class="manifesto-copy"><div class="eyebrow"><b></b> 02 / MANIFIESTO</div><h2>NOT JUST<br>A <em>CAP.</em></h2><p>INFOCOM nace de una idea sencilla: tu estilo empieza en los detalles. Creamos gorras con una identidad visual fuerte, limpia y reconocible.</p><div class="stats"><div><strong>01</strong><small>IDENTITY</small></div><div><strong>02</strong><small>DESIGN</small></div><div><strong>03</strong><small>ATTITUDE</small></div></div></div>
-    </section>
+<section class="campaign"><img src="assets/banners/sport.svg" alt="INFOCOM Sport Collection"><div><div class="eyebrow">05 / PERFORMANCE</div><h2>MOVE<br><em>DIFFERENT.</em></h2><p>Diseños inspirados en movimiento, energía y uso diario.</p><a class="btn" href="#shop">SHOP SPORT ↗</a></div></section>
 
-    <section class="feature section">
-      <div class="feature-copy"><div class="eyebrow"><b></b> 03 / SIGNATURE</div><h2>THE DETAIL<br>IS THE <em>DIFFERENCE.</em></h2><p>Una estética construida alrededor del contraste, el movimiento y el carácter de INFOCOM.</p><a class="text-link" href="#shop">DISCOVER SIGNATURE →</a></div>
-      <div class="feature-card"><span>INFOCOM</span><strong>IF</strong><small>EST. 2026 / 001</small></div>
-    </section>
+<section id="story" class="story"><div class="story-art"><img src="assets/products/12.svg" alt="INFOCOM Signature"><span>DETAIL STUDY / IF-001</span></div><div class="story-copy"><div class="eyebrow">06 / THE BRAND</div><h2>NOT JUST<br>A <em>CAP.</em></h2><p>INFOCOM convierte una pieza cotidiana en una señal de identidad. Nuestro lenguaje mezcla formas limpias, contraste y detalles reconocibles.</p><div class="story-stats"><div><b>12</b><span>ORIGINAL STYLES</span></div><div><b>01</b><span>COLLECTION</span></div><div><b>∞</b><span>WAYS TO WEAR</span></div></div><a class="link" href="#contact">LEARN MORE →</a></div></section>
 
-    <section class="newsletter">
-      <div><div class="eyebrow"><b></b> 04 / INSIDER</div><h2>GET THE<br><em>DROP.</em></h2><p>Nuevas piezas, lanzamientos y noticias de INFOCOM.</p></div>
-      <form id="newsletter"><input type="email" placeholder="TU EMAIL" required><button>JOIN ↗</button></form>
-    </section>
-  </main>
+<section class="rewards"><div><div class="eyebrow">07 / INFOCOM REWARDS</div><h2>WEAR MORE.<br><em>EARN MORE.</em></h2><p>Crea tu cuenta y prepárate para acumular puntos, recibir acceso anticipado y descubrir nuevos drops.</p><button class="btn" id="rewardsBtn">JOIN REWARDS ↗</button></div><div class="reward-card"><span>IF</span><b>REWARDS</b><small>MEMBER / 001</small></div></section>
 
-  <footer id="contact">
-    <div class="footer-grid">
-      <div><div class="footer-brand">INFO<span>COM</span></div><p>Tu estilo. Tu gorra. Tu identidad.</p></div>
-      <div><small>EXPLORE</small><a href="#shop">Shop</a><a href="#story">Manifiesto</a><a href="#contact">Contacto</a></div>
-      <div><small>SOCIAL</small><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a></div>
-      <div><small>CONTACT</small><a href="mailto:contacto@infocom.com">contacto@infocom.com</a><p>© 2026 INFOCOM</p></div>
-    </div>
-    <div class="footer-bottom"><span>INFOCOM® / 2026</span><span>DESIGNED FOR IDENTITY</span><span>ALL RIGHTS RESERVED</span></div>
-  </footer>
+<section class="newsletter"><div><div class="eyebrow">08 / STAY IN THE LOOP</div><h2>DON'T MISS<br>THE <em>DROP.</em></h2></div><form id="newsletter"><input type="email" required placeholder="YOUR EMAIL ADDRESS"><button>JOIN ↗</button></form></section>
+</main>
 
-  <div class="search-modal" id="searchModal"><div><button class="close" data-close="searchModal">×</button><div class="eyebrow">SEARCH</div><h2>FIND YOUR<br><em>IDENTITY.</em></h2><input id="searchInput" type="search" placeholder="Busca una gorra..."></div></div>
+<footer id="contact"><div class="footer-main"><div><div class="footer-brand">INFO<span>COM</span></div><p>Tu estilo. Tu gorra. Tu identidad.</p></div><div><b>SHOP</b><a href="#shop">Shop All</a><a href="#drops">New Arrivals</a><a href="#bestsellers">Best Sellers</a><a href="#shop">Premium</a></div><div><b>INFOCOM</b><a href="#story">Our Story</a><a href="#story">Rewards</a><a href="#contact">Contact</a><a href="#">FAQ</a></div><div><b>FOLLOW</b><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a><a href="#">YouTube</a></div></div><div class="footer-bottom"><span>© 2026 INFOCOM®</span><span>ALL RIGHTS RESERVED</span><span>PRIVACY / TERMS / RETURNS</span></div></footer>
 
-  <aside class="drawer" id="drawer">
-    <div class="drawer-head"><b>BAG / <span id="drawerCount">0</span></b><button id="closeDrawer">×</button></div>
-    <div id="cartItems"></div>
-    <div class="drawer-bottom"><div><span>TOTAL</span><strong id="total">$0.00</strong></div><button id="checkout">CHECKOUT →</button></div>
-  </aside>
-  <div class="overlay" id="overlay"></div>
-  <div class="toast" id="toast"></div>
+<aside class="drawer" id="drawer"><div class="drawer-head"><b>YOUR BAG <span id="drawerCount">0</span></b><button id="closeBag">×</button></div><div id="cartItems"></div><div class="drawer-bottom"><div class="shipping-progress"><span id="shippingText">Add $75.00 for free shipping</span><div><i id="shippingBar"></i></div></div><div class="total"><span>SUBTOTAL</span><b id="total">$0.00</b></div><button id="checkout">CHECKOUT →</button></div></aside><div class="overlay" id="overlay"></div>
 
+<div class="modal" id="productModal"><div class="modal-box"><button class="modal-close" data-close>×</button><div id="modalContent"></div></div></div>
+<div class="modal" id="accountModal"><div class="modal-box small"><button class="modal-close" data-close>×</button><div class="eyebrow">INFOCOM ACCOUNT</div><h2>WELCOME<br><em>BACK.</em></h2><input placeholder="EMAIL"><input placeholder="PASSWORD" type="password"><button class="btn full">SIGN IN →</button><p>¿Nuevo aquí? <b>Crear cuenta</b></p></div></div>
+<div class="search-modal" id="searchModal"><div class="search-box"><button class="modal-close" data-close>×</button><div class="eyebrow">SEARCH INFOCOM</div><h2>FIND YOUR<br><em>CAP.</em></h2><input id="searchInput" type="search" placeholder="Search products..."><div id="searchResults"></div></div></div>
+<div class="toast" id="toast"></div>
 <script src="js/script.js"></script>
-</body>
-</html>
+</body></html>
